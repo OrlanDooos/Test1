@@ -1,0 +1,19 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright install && npx playwright test --config=playwright.config.ts",
+    "generateReport": "npx allure generate allure-results -o allure-report --clean",
+    "openReport": "npx allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.38.0",
+    "@types/node": "^20.6.1",
+    "allure-playwright": "^2.8.1"
+  }
+}
